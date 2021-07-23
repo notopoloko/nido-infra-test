@@ -6,8 +6,8 @@ app.get('/', (req, res) => {
   res.send('Hello from the nido project!\n');
 });
 
-app.get('/ping', (req, res) => {
-  res.send('pong!\n');
+app.get('/pong', (req, res) => {
+  res.send('ping12345!\n');
 });
 
 app.listen(port, () => {
