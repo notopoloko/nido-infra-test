@@ -1,3 +1,3 @@
 #!/bin/bash
 set -e
-ssh ${USER}@${SERVER} -p ${PORT} -v exit
+ssh ${USER}@${SERVER} -p ${PORT} -v 'date && exit'
