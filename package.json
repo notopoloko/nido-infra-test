@@ -1,0 +1,27 @@
+{
+  "name": "nido-infra-test",
+  "version": "1.0.0",
+  "description": "Projeto teste para a infraestrutura do nido",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "echo \"Good to go\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/notopoloko/nido-infra-test.git"
+  },
+  "keywords": [
+    "infra",
+    "nido"
+  ],
+  "author": "notopoloko",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/notopoloko/nido-infra-test/issues"
+  },
+  "homepage": "https://github.com/notopoloko/nido-infra-test#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
