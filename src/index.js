@@ -4,8 +4,12 @@ const port = 3000
 
 app.get('/', (req, res) => {
   res.send('Hello from the nido project!\n');
-})
+});
+
+app.get('/ping', (req, res) => {
+  res.send('pong!\n');
+});
 
 app.listen(port, () => {
   console.log(`Example app listening at http://localhost:${port}`);
-})
+});
