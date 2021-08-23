@@ -9,11 +9,11 @@ after_success:
 - echo 'Contruido e deployado'
 deploy:
   provider: pypi
-  script: echo 'Testando antes de gerar versao'
+  script: pip3 install wheel
   username: '__token__'
   password:
     secure: fR+o5Z9Ih18hBMvyYs2sUi0lpftmEsUuHdoJbxl5Zv3kpPsV6Fd7wphpUWj8p8+M4vP6KcDFHKdRj8GMdJQee1fbh8j3V2SluBcE4QV1Rl+BQTVspHXdL7u3HypHaALNZjA7sPU2JcDQ3qB58VZTQlVQ/zr9yJm6PhPICnIKuYd+rr1g/gDtA2w8LQ5O+qAEHNNpWlBGLcOVm71UiieMgUb5m3W0WxR7GM1uUdOvMIfggyllM1sGQoVNRn1a//SXYdP+mOtMEX/hWAGSR5B0PXORpauwT0Edrf1uDm6frjhVs8ioDYFgvW7031f+SQF3VW6Ty6JetJHW9vqCeGwEaMIvQ4gjDqbSCn/Enc5w+6t8e3EY0v4PtR0o0E9M50q+ZKL1IWaurd3xbt1eQkMCCTlzybcTebrNrowtaUtMzhB3YDeS31gbU5i0s9Oa9LXbDOhi2wfoZD6P3X37PAgHBtrri6nvNNRVBkSu8LSwwphEPuGVVOi5IKZbf7mjCmQZk6KF9HAv4ZSonXtjhEOSohNb1lLwAtQOfRKrrSx2wD35VBJc40+H6OG+B7VYBSFIZgq5lvk+Mth9EvGQ3bs4Eh86d6Cu3fWFeFrldxVEYDhpXLE2QB6VeM3FXe6R6X1VVsTMM+lYHEVsDShNOytMyLNqJ7QHQxrLmpL8MBR04Kc=
-  distributions: 'sdist'
+  distributions: 'sdist bdist_wheel'
   skip_existing: true
   on:
     tags: true
