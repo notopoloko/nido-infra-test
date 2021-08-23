@@ -1,9 +1,9 @@
-from distutils.core import setup
+from setuptools import setup
 
 setup(
   name = 'nido-infra-test',         # How you named your package folder (MyLib)
   packages = ['nido-infra-test'],   # Chose the same as "name"
-  version = '0.9',      # Start with a small number and increase it with every change you make
+  version = '1.0',      # Start with a small number and increase it with every change you make
   license='MIT',        # Chose a license from here: https://help.github.com/articles/licensing-a-repository
   description = 'Repositorio de teste de deploy automatico no pypi',   # Give a short description about your library
   author = 'Notopoloko',                   # Type in your name
