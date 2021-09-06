@@ -1,14 +1,23 @@
 language: python
 python:
-- '3.8'
+  - '3.6'
 install:
-- echo 'Instalando componentes'
+  - python3 -V
+  - pyenv install 3.7
+  - pyenv global 3.7
+  - python3 -V
+  - pyenv install 3.8
+  - pyenv global 3.8
+  - python3 -V
+  - pyenv install 3.9
+  - pyenv global 3.9
+  - python3 -V
 
 script:
-- echo 'Os testes foram executados'
+  - echo 'Os testes foram executados'
 
 after_success:
-- echo 'Contruido e deployado'
+  - echo 'Contruido e deployado'
 
 deploy:
   provider: pypi
