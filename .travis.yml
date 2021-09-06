@@ -3,6 +3,7 @@ python:
   - '3.6'
 install:
   - python3 -V
+  - pyenv install --list
   - pyenv install 3.7
   - pyenv global 3.7
   - python3 -V
