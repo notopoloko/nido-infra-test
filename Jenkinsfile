@@ -1,13 +1,25 @@
 pipeline {
-    agent {
-       label "Python3.6"
+  agent {
+    label "Python3.6"
+  }
+
+  stages {
+    stage('pre-start') {
+      steps {
+        sh 'g++ --verion'
+      }
     }
 
-    stages {
-        stage('build') {
-            steps {
-                sh 'python3 --version'
-            }
-        }
-    }
+    // stage('test') {
+    //   steps {
+    //     sh 'pytest tests'
+    //   }
+    // }
+
+    // stage('lint') {
+    //   steps {
+    //     sh 'pylint */**'
+    //   }
+    // }
+  }
 }
