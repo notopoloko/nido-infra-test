@@ -1,6 +1,6 @@
 pipeline {
   agent {
-    label "Python3.8"
+    label "Python3.6"
   }
 
   stages {
