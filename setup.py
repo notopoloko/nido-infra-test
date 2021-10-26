@@ -10,7 +10,7 @@ setup(
   author_email = 'amarals16@hotmail.com',      # Type in your E-Mail
   url = 'https://github.com/user/notopoloko',   # Provide either the link to your github or to your website
   download_url = 'https://github.com/user/notopoloko/archive/v_01.tar.gz',    # I explain this later on
-  keywords = ['TESTE', 'NIDO', 'UNB'],   # Keywords that define your package best
+  keywords = ['TESTE', 'NIDO', 'UNB', 'TEST'],   # Keywords that define your package best
   # install_requires=[],            # I get to this in a second
   classifiers=[
     'Development Status :: 3 - Alpha',      # Chose either "3 - Alpha", "4 - Beta" or "5 - Production/Stable" as the current state of your package
